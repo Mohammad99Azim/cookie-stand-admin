@@ -16,7 +16,7 @@ export default function Home() {
       </Head>
 
       <header className='w-full'>
-        <Navbar />
+       <Navbar />
       </header>
 
       <div className={styles.container}>

@@ -13,12 +13,12 @@ export default function Form(){
             "maxCustomers": e.target.maximum.value,
             "avgCookies": e.target.average.value,
         }
-        setdata([...data ,the_data]);
+        setdata([the_data]);
     }
 
     return(
         <>
-        <div className="bg-green-300 p-6 rounded-md w-5/6">
+        <div className="w-5/6 p-6 bg-green-300 rounded-md">
         <form onSubmit={handleFormSubmit}>
             <div>
                 <div className="flex items-center justify-center mb-5">
@@ -46,7 +46,7 @@ export default function Form(){
                     </div>
                     
                     <div className="w-40">
-                        <input className="bg-green-600 mt-1 px-16 py-3 font-medium" type="submit" value="Create" />
+                        <input className="px-16 py-3 mt-1 font-medium bg-green-600" type="submit" value="Create" />
                     </div>
                 </div>
 
@@ -55,7 +55,7 @@ export default function Form(){
         </form>
         </div>
 
-        <div className="text-center text-gray-500 font-medium mt-16">
+        <div className="mt-16 font-medium text-center text-gray-500">
             <h4>Report Table Coming Soon...</h4>
             {
                 data.map((item, index)=>{
