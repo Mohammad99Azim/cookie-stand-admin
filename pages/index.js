@@ -1,33 +1,13 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-import Navbar from '../components/Navbar'
-import Form from '../components/Form'
-import Footer from '../components/Footer'
+import CookieStandAdmin from '../components/CookieStandAdmin'
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Cookie Stand Admin</title>
-        <meta name="description" content="Cookie Stand Admin" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <header className='w-full'>
-       <Navbar />
-      </header>
-
-      <div className={styles.container}>
-        <main className={styles.main}>
-          <Form />
-        </main>
-      </div>
-      <footer className={styles.footer}>
-        <Footer/>
-      </footer>
+      <CookieStandAdmin></CookieStandAdmin>
     
-  </>
+    </>
   )
 }

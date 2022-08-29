@@ -1,10 +1,10 @@
 
 
-export default function Footer(){
+export default function Footer(data){
     return(
         <>
-            <div className="bg-green-600 w-full h-12 flex items-center pl-5">
-                <p>&copy;2022</p>
+            <div className="flex items-center w-full h-12 pl-5 bg-green-600">
+                <p>{data["data"].length} Location World Wide</p>
             </div>
 
         </>
