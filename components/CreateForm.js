@@ -2,18 +2,21 @@ import React, { useState } from 'react';
 
 
 
-export default function Form(){
-    const [data,setdata] = useState([])
+export default function CreateForm({setValue,data}){
+    
 
     function handleFormSubmit(e){
         e.preventDefault()
-        let the_data ={
-            "location": e.target.location.value,
-            "minCustomers": e.target.minimum.value,
-            "maxCustomers": e.target.maximum.value,
-            "avgCookies": e.target.average.value,
-        }
-        setdata([the_data]);
+        // let the_data ={
+        //     "location": e.target.location.value,
+        //     "minCustomers": e.target.minimum.value,
+        //     "maxCustomers": e.target.maximum.value,
+        //     "avgCookies": e.target.average.value,
+        // }
+        // setValue([...data ,the_data ]);
+
+        let hourly_sales=[48, 42, 30, 24, 42, 24, 36, 42, 42, 48, 36, 42, 24, 36,e.target.location.value]
+        setValue([...data ,hourly_sales ]);
     }
 
     return(
@@ -55,17 +58,7 @@ export default function Form(){
         </form>
         </div>
 
-        <div className="mt-16 font-medium text-center text-gray-500">
-            <h4>Report Table Coming Soon...</h4>
-            {
-                data.map((item, index)=>{
-                    return(
-                        <p  key={index} className="mt-8"> {"{"}"location":"{item["location"]}",minCustomers":{item["minCustomers"]},maxCustomers":{item["maxCustomers"]},"avgCookies":{item["avgCookies"]}{"}"}</p>
-                    )
-                })
-            }
-           
-        </div>
+        
         </>
     )
 } 

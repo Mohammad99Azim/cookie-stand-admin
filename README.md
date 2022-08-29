@@ -1,4 +1,4 @@
-# Lab: 37 - React I
+# Lab: Cookie Stand Admin Version 2
 
 ## Project: cookie-stand-admin
 
@@ -11,5 +11,6 @@
 - [React](https://reactjs.org/)
 
 
-Vresion 1 Pull Request: [PR](https://github.com/Mohammad99Azim/cookie-stand-admin/pull/1)
+Version 1 Pull Request: [PR](https://github.com/Mohammad99Azim/cookie-stand-admin/pull/1)
 
+Version 2 pull Request:
