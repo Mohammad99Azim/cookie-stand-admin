@@ -1,4 +1,4 @@
-# Lab: Cookie Stand Admin Version 2
+# Lab: Cookie Stand Admin Version 3
 
 ## Project: cookie-stand-admin
 

@@ -10,7 +10,7 @@ import Footer from '../components/Footer'
 
 
 const CookieStandAdmin = () => {
-    const [data,setValue] = useState([]);
+  const [value, setValue] = useState('')
 
     return (
         <>
@@ -27,13 +27,13 @@ const CookieStandAdmin = () => {
       <div className= "min-h-screen">
         <main className={styles.main}>
         
-            <CreateForm setValue={setValue} data={data} />
-            <ReportTable data ={data}/>
+            <CreateForm setValue={setValue} />
+            <ReportTable value={value}/>
     
         </main>
       </div>
       <footer className= {styles.footer}>
-        <Footer data ={data}/>
+        <Footer/>
       </footer>
         </>
     );
